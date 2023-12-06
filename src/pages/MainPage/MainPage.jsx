@@ -26,11 +26,13 @@ const MainPage = () => {
   };
   return (
     <div className={style.search}>
-      <Input
-        className={style.input}
-        placeholder="Поиск треков"
-        onChange={handleChange}
-      />
+      <div className={style.input_container}>
+        <Input
+          className={style.input}
+          placeholder="Track search..."
+          onChange={handleChange}
+        />
+      </div>
       <div className={style.list}>
         {tracks.map((track) => (
           <Track key={track?.id} {...track} />

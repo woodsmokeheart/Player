@@ -1,10 +1,17 @@
 .search {
-  flex: 1;
+  width: 100%;
+}
+
+.input_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input {
-  width: 300px;
-  margin: 10px 150px;
+  max-width: 500px;
+  margin: 10px;
 
   & > * {
     text-align: center !important;
