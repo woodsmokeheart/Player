@@ -25,18 +25,20 @@ const MainPage = () => {
     setTracks(foundTracks);
   };
   return (
-    <div className={style.search}>
-      <div className={style.input_container}>
-        <Input
-          className={style.input}
-          placeholder="Track search..."
-          onChange={handleChange}
-        />
-      </div>
-      <div className={style.list}>
-        {tracks.map((track) => (
-          <Track key={track?.id} {...track} />
-        ))}
+    <div className={style.wrapper}>
+      <div className={style.search}>
+        <div className={style.input_container}>
+          <Input
+            className={style.input}
+            placeholder="Track search..."
+            onChange={handleChange}
+          />
+        </div>
+        <div className={style.list}>
+          {tracks.map((track) => (
+            <Track key={track?.id} {...track} />
+          ))}
+        </div>
       </div>
     </div>
   );

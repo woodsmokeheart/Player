@@ -1,5 +1,12 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .search {
   width: 100%;
+  max-width: 700px;
 }
 
 .input_container {
